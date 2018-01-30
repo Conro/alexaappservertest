@@ -6,16 +6,17 @@
   "author": "Matt Kruse",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexa-js/alexa-app-server.git"
+    "url": "git+https://github.com/alexa-js/alexa-app-server.git"
   },
   "bugs": {
     "url": "https://github.com/alexa-js/alexa-app-server/issues"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec",
+    "test": "mocha",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- -R spec",
     "coverage_local": "istanbul cover node_modules/mocha/bin/_mocha",
-    "danger": "./node_modules/.bin/danger"
+    "danger": "danger",
+    "start": "node server.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -38,5 +39,7 @@
     "sinon-chai": "^2.8.0",
     "supertest": "^3.0.0",
     "tcp-port-used": "0.1.2"
-  }
+  },
+  "homepage": "https://github.com/alexa-js/alexa-app-server#readme",
+  "keywords": []
 }
