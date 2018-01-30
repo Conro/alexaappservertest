@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "A sample Alexa app",
   "main": "index.js",
-  "author": "Matt Kruse <github@mattkruse.com> (http://mattkruse.com/)",
-  "license": "ISC",
+  "author": "Conor",
   "alexa": {
-    "applicationId": "amzn1.echo-sdk-ams.app.999999-d0ed-9999-ad00-999999d00ebe"
+    "applicationId": "amzn1.ask.skill.5abe7b4b-4e47-4421-8061-97a9eb335805"
   },
   "dependencies": {
     "alexa-app": "^2.1.0"
