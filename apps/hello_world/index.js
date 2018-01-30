@@ -9,6 +9,7 @@ app.id = require('./package.json').alexa.applicationId;
 
 app.launch(function(req, res) {
   res.say("Hello World!!");
+  res.shouldEndSession(false);
 });
 
 app.intent('NameIntent', {
@@ -16,6 +17,7 @@ app.intent('NameIntent', {
   "utterances": ["{My name is|my name's} {matt|bob|bill|jake|nancy|mary|jane|NAME} and I am {1-100|AGE}{ years old|}"]
 }, function(req, res) {
   res.say('Your name is ' + req.slot('NAME') + ' and you are ' + req.slot('AGE') + ' years old');
+  res.shouldEndSession(false);
 });
 
 app.intent('AgeIntent', {
@@ -23,6 +25,7 @@ app.intent('AgeIntent', {
   "utterances": ["My age is {1-100|AGE}"]
 }, function(req, res) {
   res.say('Your age is ' + req.slot('AGE'));
+  res.shouldEndSession(false);
 });
 
 module.exports = app;
