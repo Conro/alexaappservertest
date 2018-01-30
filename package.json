@@ -27,7 +27,9 @@
     "ejs": "~2.5.5",
     "express": "~4.14.1",
     "hotswap": "^1.1.0",
-    "lodash.defaults": "^4.2.0"
+    "lodash.defaults": "^4.2.0",
+    "mongodb": "^3.0.2",
+    "mongoose": "^5.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
