@@ -28,4 +28,8 @@ app.intent('AgeIntent', {
   res.shouldEndSession(false);
 });
 
+app.intent('VactionIntent', function(req, res) {
+  res.say('You are on vacation!');
+});
+
 module.exports = app;
