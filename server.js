@@ -3,7 +3,7 @@ var PORT = process.env.PORT || 8080;
 
 var MongoClient = require('mongodb').MongoClient;
 
-var uri = "mongodb+srv://conor1123:0593950c@testcluster-h2vrz.mongodb.net/test";
+var uri = "mongodb+srv://conor1123:test123@testcluster-h2vrz.mongodb.net/test";
 MongoClient.connect(uri, function(err, client) {
    if(err){
      console.log("error connectiong to db");
