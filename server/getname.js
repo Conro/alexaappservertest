@@ -26,7 +26,15 @@ module.exports = function(express,alexaAppServerObject) {
 
         
         User.find({},function(err, users){
-            console.log("got dem users");
+
+            if(err){
+                console.log("error getting dem users");
+            }
+            else{
+                console.log("got dem users");
+                res.send(users); 
+            }
+            
 /*
             var userMap = {};
             
@@ -34,9 +42,9 @@ module.exports = function(express,alexaAppServerObject) {
                 userMap[user._id] = user;
             });*/
         
-            res.send(users);  
+            //res.send(users);  
 
-        }).then (items => {
+        });/*.then (items => {
             console.log("done finding users");
             //res.send(users);
         });

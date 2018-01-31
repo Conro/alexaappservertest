@@ -13,6 +13,7 @@ module.exports = function(express,alexaAppServerObject) {
 
         var myData = new User(req.body);
         console.log(req.body);
+        console.log(myData);
         myData.save()
             .then(item => {
                 res.send("Name saved to database");
