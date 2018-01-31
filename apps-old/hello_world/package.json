@@ -1,0 +1,13 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "A sample Alexa app",
+  "main": "index.js",
+  "author": "Conor",
+  "alexa": {
+    "applicationId": "amzn1.ask.skill.5abe7b4b-4e47-4421-8061-97a9eb335805"
+  },
+  "dependencies": {
+    "alexa-app": "^2.1.0"
+  }
+}
